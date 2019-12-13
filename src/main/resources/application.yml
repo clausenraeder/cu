@@ -1,0 +1,27 @@
+spring:
+  logging:
+    level:
+      root: ERROR
+      com.organizationX: DEBUG
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:/home/craeder/Workspace/Projects/Estudo/h2DB/dbh2teset
+    username: sa
+    password:
+  flyway:
+    user: sa
+    password:
+    baseline-on-migrate: true
+    url: jdbc:h2:file:/home/craeder/Workspace/Projects/Estudo/h2DB/dbh2teset
+  kafka:
+    schema-registry-url: unused
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  producer:
+    bootstrap-servers: localhost:9092
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer

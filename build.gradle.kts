@@ -43,6 +43,11 @@ dependencies {
 	compile("org.springframework.kafka","spring-kafka","2.3.1.RELEASE")
 	compile("org.apache.kafka","kafka-clients","2.3.1")
 	compile("com.google.code.gson", "gson", "2.8.5")
+	compile("org.apache.avro", "avro", "1.8.2")
+	compile("io.springfox", "springfox-swagger2", "2.9.2")
+	compile( "io.springfox", "springfox-swagger-ui", "2.9.2")
+
+
 
 }
 
